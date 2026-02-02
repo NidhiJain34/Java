@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Scanner;
 
 class Student {
@@ -42,3 +43,49 @@ public class Main {
         sc.close();
     }
 }
+=======
+import java.util.Scanner;
+
+class Student {
+    String name;
+    int rollNo;
+    long prn;
+
+    // Parameterized Constructor
+    Student(String n, int r, long p) {
+        name = n;
+        rollNo = r;
+        prn = p;
+    }
+
+    void display() {
+        System.out.println("Name   : " + name);
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("PRN    : " + prn);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Roll No: ");
+        int roll = sc.nextInt();
+
+        System.out.print("Enter PRN: ");
+        long prn = sc.nextLong();
+
+        // Passing values to constructor
+        Student s = new Student(name, roll, prn);
+
+        System.out.println("\nStudent Details:");
+        s.display();
+
+        sc.close();
+    }
+}
+>>>>>>> 88d54c5 (hellooooo)

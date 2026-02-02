@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class Demo {
 
     // Parameterized Method
@@ -14,3 +15,21 @@ public class Demo {
         d.add(10, 20);
     }
 }
+=======
+public class Demo {
+
+    // Parameterized Method
+    void add(int a, int b) {
+        int sum = a + b;
+        System.out.println("Sum = " + sum);
+    }
+
+    public static void main(String[] args) {
+
+        Demo d = new Demo();
+
+        // Passing predefined values
+        d.add(10, 20);
+    }
+}
+>>>>>>> 88d54c5 (hellooooo)
